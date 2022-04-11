@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainPageActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/app_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/teal_200"
+            android:elevation="4dp"
+            android:theme="?attr/actionBarTheme"
+            app:title="맞춤형 의료서비스"
+            app:menu="@menu/menu"
+            app:titleCentered="true"
+            app:titleTextColor="@color/black"></com.google.android.material.appbar.MaterialToolbar>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120px"
+            android:text="어느 쪽 부위인지 선택해주세요"
+            android:textSize="24sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="287dp"
+            android:layout_marginLeft="200px"
+            android:background="@android:color/transparent"
+            tools:ignore="SpeakableTextPresentCheck"
+            app:srcCompat="@drawable/body1" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="550px"
+            android:layout_marginTop="10px"
+            android:background="@android:color/transparent"
+            tools:ignore="SpeakableTextPresentCheck"
+            app:srcCompat="@drawable/body2" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="550px"
+            android:layout_marginTop="150px"
+            android:background="@android:color/transparent"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/body3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="550px"
+            android:layout_marginTop="270px"
+            android:background="@android:color/transparent"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/body4"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="560px"
+            android:layout_marginTop="530px"
+            android:background="@android:color/transparent"
+            tools:ignore="SpeakableTextPresentCheck"
+            app:srcCompat="@drawable/body6" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="550px"
+            android:layout_marginTop="400px"
+            android:background="@android:color/transparent"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/body5"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="wrap_content"
+            android:layout_height="111dp"
+            android:layout_marginLeft="200px"
+            android:layout_marginTop="750px"
+            android:background="@android:color/transparent"
+            tools:ignore="SpeakableTextPresentCheck"
+            app:srcCompat="@drawable/body9" />
+
+    </FrameLayout>
+</LinearLayout>
