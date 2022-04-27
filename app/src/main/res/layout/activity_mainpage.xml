@@ -9,111 +9,301 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="57dp">
+        android:layout_height="48dp">
 
-        <com.google.android.material.appbar.MaterialToolbar
+        <!-- menu bar   <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/app_actionbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/teal_200"
+            android:background="@color/white"
             android:elevation="4dp"
             android:theme="?attr/actionBarTheme"
-            app:title="맞춤형 의료서비스"
             app:menu="@menu/menu"
+            app:title="요기아파"
             app:titleCentered="true"
-            app:titleTextColor="@color/black"></com.google.android.material.appbar.MaterialToolbar>
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp">
+            app:titleTextColor="@color/black"></com.google.android.material.appbar.MaterialToolbar>-->
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="120px"
-            android:text="어느 쪽 부위인지 선택해주세요"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="요기아파"
+            android:textColor="#0E0E0E"
             android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_menu"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/menu" />
 
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/FrameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="287dp"
-            android:layout_marginLeft="200px"
-            android:background="@android:color/transparent"
-            tools:ignore="SpeakableTextPresentCheck"
-            app:srcCompat="@drawable/body1" />
+        <FrameLayout
+            android:id="@+id/FL_Picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="141dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="550px"
-            android:layout_marginTop="10px"
-            android:background="@android:color/transparent"
-            tools:ignore="SpeakableTextPresentCheck"
-            app:srcCompat="@drawable/body2" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120px"
+                android:text="어느 쪽 부위인지 선택해주세요"
+                android:textSize="24sp" />
 
-        <ImageButton
-            android:id="@+id/imageButton6"
-            android:layout_width="142dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="550px"
-            android:layout_marginTop="150px"
-            android:background="@android:color/transparent"
-            android:minHeight="48dp"
-            app:srcCompat="@drawable/body3"
-            tools:ignore="SpeakableTextPresentCheck" />
+            <ImageButton
+                android:id="@+id/imgbtn_head"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="550px"
+                android:layout_marginTop="110px"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/body2"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="142dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="550px"
-            android:layout_marginTop="270px"
-            android:background="@android:color/transparent"
-            android:minHeight="48dp"
-            app:srcCompat="@drawable/body4"
-            tools:ignore="SpeakableTextPresentCheck" />
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="111dp"
+                android:layout_marginLeft="240px"
+                android:layout_marginTop="820px"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/body9"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/imageButton9"
-            android:layout_width="142dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="560px"
-            android:layout_marginTop="530px"
-            android:background="@android:color/transparent"
-            tools:ignore="SpeakableTextPresentCheck"
-            app:srcCompat="@drawable/body6" />
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="550px"
+                android:layout_marginTop="350px"
+                android:background="@android:color/transparent"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/body4"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/imageButton8"
-            android:layout_width="142dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="550px"
-            android:layout_marginTop="400px"
-            android:background="@android:color/transparent"
-            android:minHeight="48dp"
-            app:srcCompat="@drawable/body5"
-            tools:ignore="SpeakableTextPresentCheck" />
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="540px"
+                android:layout_marginTop="475px"
+                android:background="@android:color/transparent"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/body5"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/imageButton13"
-            android:layout_width="wrap_content"
-            android:layout_height="111dp"
-            android:layout_marginLeft="200px"
-            android:layout_marginTop="750px"
-            android:background="@android:color/transparent"
-            tools:ignore="SpeakableTextPresentCheck"
-            app:srcCompat="@drawable/body9" />
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="287dp"
+                android:layout_marginLeft="240px"
+                android:layout_marginTop="100px"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/body1"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="550px"
+                android:layout_marginTop="230px"
+                android:background="@android:color/transparent"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/body3"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="555px"
+                android:layout_marginTop="610px"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/body6"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <FrameLayout
+                android:id="@+id/FL_Menu"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:background="@android:color/transparent"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="269dp"
+                    android:layout_height="450dp"
+                    android:layout_gravity="right"
+                    app:srcCompat="@drawable/round2"
+                    tools:layout_editor_absoluteX="96dp"
+                    tools:layout_editor_absoluteY="74dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="520px"
+                    android:layout_marginTop="920px"
+                    android:text="예약정보조회"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="780px"
+                    android:layout_marginTop="920px"
+                    android:text="병원등록문의"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imageButton17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="550px"
+                    android:layout_marginTop="300px"
+                    app:srcCompat="@drawable/menu_key" />
+
+                <ImageButton
+                    android:id="@+id/imageButton20"
+                    android:layout_width="60dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="800px"
+                    android:layout_marginTop="780px"
+                    app:srcCompat="@drawable/menu_hsjoin" />
+
+                <ImageButton
+                    android:id="@+id/imageButton16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="800px"
+                    android:layout_marginTop="40px"
+                    app:srcCompat="@drawable/menu_firstaid" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="550px"
+                    android:layout_marginTop="40px"
+                    app:srcCompat="@drawable/menu_vitamin" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="550px"
+                    android:layout_marginTop="200px"
+                    android:text="응급처치"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="750px"
+                    android:layout_marginTop="200px"
+                    android:text="건강식품최저가"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imageButton18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="800px"
+                    android:layout_marginTop="300px"
+                    app:srcCompat="@drawable/menu_help" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="550px"
+                    android:layout_marginTop="450px"
+                    android:text="병원로그인"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="820px"
+                    android:layout_marginTop="450px"
+                    android:text="도움말"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imageButton19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="550px"
+                    android:layout_marginTop="550px"
+                    app:srcCompat="@drawable/menu_star" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="450px"
+                    android:layout_marginTop="700px"
+                    android:text="연령별 건강정보"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="750px"
+                    android:layout_marginTop="700px"
+                    android:text="개인정보동의"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imageButton22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="800px"
+                    android:layout_marginTop="550px"
+                    app:srcCompat="@drawable/ic_baseline_lock_24" />
+
+                <ImageButton
+                    android:id="@+id/imageButton23"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="550px"
+                    android:layout_marginTop="780px"
+                    app:srcCompat="@drawable/menu_reserve" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FL_Text"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+            </FrameLayout>
+        </FrameLayout>
 
     </FrameLayout>
+
 </LinearLayout>

@@ -10,14 +10,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
         <activity
-            android:name=".MainActivity"
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".myInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".agesInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".menuBarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".firstaidActivity"
+            android:exported="true" />
+        <activity
+            android:name=".detailpageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainPageActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
         </activity>
+        <activity
+            android:name=".navermapActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="lwpzvl5a0n" />
     </application>
 
 </manifest>
