@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/arrow_back" />
+        app:srcCompat="@drawable/arrow_back_black" />
 
     <TextView
         android:id="@+id/textView2"
@@ -74,7 +74,7 @@
                     android:background="@android:color/transparent"
                     android:foregroundGravity="center_vertical"
                     android:minHeight="48dp"
-                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                    app:srcCompat="@drawable/arrow_down_black" />
 
                 <FrameLayout
                     android:id="@+id/FL_child"
@@ -127,7 +127,7 @@
                     android:background="@android:color/transparent"
                     android:foregroundGravity="center_vertical"
                     android:minHeight="48dp"
-                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                    app:srcCompat="@drawable/arrow_down_black"  />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -189,7 +189,7 @@
                     android:background="@android:color/transparent"
                     android:foregroundGravity="center_vertical"
                     android:minHeight="48dp"
-                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                    app:srcCompat="@drawable/arrow_down_black"  />
 
                 <TextView
                     android:layout_width="wrap_content"
