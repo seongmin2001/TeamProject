@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="com.example.test.reservation_complete_infomation"
+            android:exported="true" />
+        <activity
+            android:name="com.example.test.reservation_main"
+            android:exported="true" />
+        <activity
+            android:name="com.example.test.doctor_only_signing_complete"
+            android:exported="true" />
+        <activity
+            android:name="com.example.test.doctor_only_signing"
+            android:exported="true" />
+        <activity
+            android:name="com.example.test.doctor_reservation_check"
+            android:exported="true" />
+    </application>
+
+</manifest>
