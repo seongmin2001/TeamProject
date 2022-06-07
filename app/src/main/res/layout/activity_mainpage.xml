@@ -11,18 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="48dp">
 
-        <!-- menu bar   <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/app_actionbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
-            android:elevation="4dp"
-            android:theme="?attr/actionBarTheme"
-            app:menu="@menu/menu"
-            app:title="요기아파"
-            app:titleCentered="true"
-            app:titleTextColor="@color/black"></com.google.android.material.appbar.MaterialToolbar>-->
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"

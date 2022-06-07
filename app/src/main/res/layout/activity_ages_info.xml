@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".agesInfoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="98dp"
+            android:layout_height="53dp"
+            android:layout_gravity="right"
+            android:background="#03A9F4"
+            android:text="10대"
+            android:textSize="28dp" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_forty"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="390px"
+            android:backgroundTint="#2196F3"
+            android:text="40대"
+            android:textColor="#090909"
+            android:textSize="24dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_twenty"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="130px"
+            android:backgroundTint="#2196F3"
+            android:text="20대"
+            android:textColor="#090909"
+            android:textSize="24dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_thirty"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="260px"
+            android:backgroundTint="#2196F3"
+            android:text="30대"
+            android:textColor="#090909"
+            android:textSize="24dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="right"
+            android:backgroundTint="#2196F3"
+            android:paddingTop="0dp"
+            android:text="10대"
+            android:textColor="#090909"
+            android:textSize="24dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:text="자주 걸리는 질병"
+            android:textColor="#050505"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginTop="100dp"
+            android:text="비타민 정보"
+            android:textColor="#050505"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="1. 감기"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="1. 프로바이오틱스"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="60dp"
+            android:autoLink="web"
+            android:text="www.naver.com"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="150dp"
+            android:autoLink="web"
+            android:text="www.naver.com"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+</LinearLayout>
