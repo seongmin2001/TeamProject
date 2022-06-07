@@ -195,7 +195,7 @@
                     app:srcCompat="@drawable/menu_firstaid" />
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/imgBtn_aid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="550px"

@@ -8,23 +8,18 @@
     tools:context=".detailpageActivity">
 
     <ImageButton
-        android:id="@+id/imageButton12"
-        android:layout_width="77dp"
+        android:id="@+id/imgbtn_Back"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:contentDescription="@android:string/untitled"
-        app:srcCompat="@drawable/arrow" />
+        app:srcCompat="@drawable/arrow_back" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="375dp"
-        android:layout_height="514dp"
-        android:layout_marginLeft="50px"
-        android:layout_marginTop="150px"
-        android:background="@android:color/transparent"
-        android:contentDescription="@android:string/untitled"
-        app:srcCompat="@drawable/face"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="100dp" />
+        android:layout_height="526dp"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="120px"
+        app:srcCompat="@drawable/detailpage_face" />
 
 </LinearLayout>

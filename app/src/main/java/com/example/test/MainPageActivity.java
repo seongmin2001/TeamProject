@@ -1,6 +1,8 @@
 package com.example.test;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +10,13 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+
 public class MainPageActivity extends AppCompatActivity {
 
     FrameLayout flMenu, flPicture, flText;
     ImageButton imgbtnHead;
-    ImageButton imgbtnMenu;
+    ImageButton imgbtnMenu, imgbtnAid;
     Integer count = 0;
 
     @Override
@@ -22,9 +26,18 @@ public class MainPageActivity extends AppCompatActivity {
 
         imgbtnHead = findViewById(R.id.imgbtn_head);
         imgbtnMenu = findViewById(R.id.imgbtn_menu);
+        imgbtnAid = findViewById(R.id.imgBtn_aid);
         flMenu = (FrameLayout) findViewById(R.id.FL_Menu) ;
         flPicture = (FrameLayout) findViewById(R.id.FL_Picture);
         flText = (FrameLayout) findViewById(R.id.FL_Text);
+
+        imgbtnAid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainPageActivity.this,firstaidActivity.class);
+                startActivity(intent);
+            }
+        });
 
         imgbtnHead.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,25 +65,4 @@ public class MainPageActivity extends AppCompatActivity {
             }
         });
     }
-
-/*    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //return super.onCreateOptionsMenu(menu);
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu, menu);
-
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menuBar:
-                Toast.makeText(getApplicationContext(), "Search Action", Toast.LENGTH_SHORT).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }*/
-
 }
