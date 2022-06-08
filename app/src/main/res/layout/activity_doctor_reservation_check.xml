@@ -177,16 +177,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/custom_button" />
 
+    <!-- android:text="@string/title_timecheck" -->
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:textSize="20sp"
-        android:text="@string/title_timecheck"
+
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
+
 
 
     <TextView
