@@ -2,13 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.test">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Test"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Test">
+        android:theme="@style/Theme.Test"
+        android:usesCleartextTraffic="true">
         <activity
             android:name="com.example.test.reservation_complete_infomation"
             android:exported="true" />
@@ -41,11 +48,20 @@
         <activity
             android:name=".MainPageActivity"
             android:exported="true">
-<!--        <intent-filter>
+        </activity>
+        <activity
+            android:name=".GPSActivity"
+            android:exported="true">
+        <intent-filter>
             <action android:name="android.intent.action.MAIN"/>
             <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>-->
+        </intent-filter>
         </activity>
+        <activity
+            android:name=".ParsingActivity"
+            android:exported="true"/>
+        <!--<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD0OHRW-muWUdrE9LogrHAk_cZTJ4zL40w" />-->
     </application>
-
 </manifest>
