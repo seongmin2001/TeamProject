@@ -159,7 +159,7 @@
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/imageButton17"
+                    android:id="@+id/imgBtn_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="550px"
@@ -167,7 +167,7 @@
                     app:srcCompat="@drawable/menu_key" />
 
                 <ImageButton
-                    android:id="@+id/imageButton20"
+                    android:id="@+id/imgBtn_docSign"
                     android:layout_width="60dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="800px"
@@ -175,7 +175,7 @@
                     app:srcCompat="@drawable/menu_hsjoin" />
 
                 <ImageButton
-                    android:id="@+id/imageButton16"
+                    android:id="@+id/imgBtn_healthFood"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="800px"
@@ -239,7 +239,7 @@
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/imageButton19"
+                    android:id="@+id/imgBtn_ageInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="550px"
@@ -267,7 +267,7 @@
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/imageButton22"
+                    android:id="@+id/imgBtn_infoAgree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="800px"
@@ -275,7 +275,7 @@
                     app:srcCompat="@drawable/ic_baseline_lock_24" />
 
                 <ImageButton
-                    android:id="@+id/imageButton23"
+                    android:id="@+id/imgBtn_reSearch"
                     android:layout_width="66dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="550px"
@@ -293,6 +293,19 @@
         </FrameLayout>
 
     </FrameLayout>
+    <Button
+        android:id="@+id/btSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="검색" />
+
+    <TextView
+        android:id="@+id/bodyTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="검색결과" />
+
     <Button
         android:id="@+id/btSearch"
         android:layout_width="match_parent"
