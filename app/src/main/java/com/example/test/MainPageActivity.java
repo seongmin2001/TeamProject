@@ -15,7 +15,7 @@ public class MainPageActivity extends AppCompatActivity {
 
     FrameLayout flMenu, flPicture, flText;
     ImageButton imgbtnHead;
-    ImageButton imgbtnMenu, imgbtnArm , imgbtnAid;
+    ImageButton imgbtnMenu, imgbtnArm , imgbtnAid, imgbtnLogin;
     Integer count = 0;
 
     public static Context context; //다른 액티비티에 변수 전달
@@ -29,6 +29,7 @@ public class MainPageActivity extends AppCompatActivity {
 
         context=this;
 
+        imgbtnLogin = findViewById(R.id.imgBtn_login);
         imgbtnArm = findViewById(R.id.btArm);
         imgbtnHead = findViewById(R.id.btHead);
         imgbtnMenu = findViewById(R.id.imgbtn_menu);
@@ -38,6 +39,14 @@ public class MainPageActivity extends AppCompatActivity {
         flText = (FrameLayout) findViewById(R.id.FL_Text);
 
         body_tv = (TextView) findViewById(R.id.bodyTv);
+
+        imgbtnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainPageActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         imgbtnAid.setOnClickListener(new View.OnClickListener() {
             @Override

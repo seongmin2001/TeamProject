@@ -127,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="450dp"
                 android:background="@android:color/transparent"
-                android:visibility="invisible">
+                android:visibility="visible">
 
                 <ImageView
                     android:id="@+id/imageView"
