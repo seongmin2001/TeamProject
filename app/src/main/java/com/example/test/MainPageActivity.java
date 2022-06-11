@@ -14,6 +14,7 @@ import android.widget.TextView;
 public class MainPageActivity extends AppCompatActivity {
 
     FrameLayout flMenu, flPicture, flText;
+
     ImageButton imgbtnHead, imgbtnOther, imgbtnBok, imgbtnGol, imgbtnBody, imgbtnMok, imgbtnArm;
     ImageButton imgbtnMenu, imgbtnAid;
     Integer count = 0;
