@@ -50,7 +50,7 @@
                 android:textSize="24sp" />
 
             <ImageButton
-                android:id="@+id/imgbtn_head"
+                android:id="@+id/btHead"
                 android:layout_width="141dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="550px"
@@ -60,7 +60,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
-                android:id="@+id/imageButton13"
+                android:id="@+id/btOther"
                 android:layout_width="wrap_content"
                 android:layout_height="111dp"
                 android:layout_marginLeft="240px"
@@ -70,7 +70,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/btBok"
                 android:layout_width="142dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="550px"
@@ -81,7 +81,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/btGol"
                 android:layout_width="145dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="540px"
@@ -92,7 +92,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/btBody"
                 android:layout_width="wrap_content"
                 android:layout_height="287dp"
                 android:layout_marginLeft="240px"
@@ -102,7 +102,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/btMok"
                 android:layout_width="142dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="550px"
@@ -113,7 +113,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/btArm"
                 android:layout_width="142dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="555px"
@@ -293,5 +293,18 @@
         </FrameLayout>
 
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/bodyTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="선택부위" />
+
+    <Button
+        android:id="@+id/btSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="검색" />
 
 </LinearLayout>

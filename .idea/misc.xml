@@ -44,12 +44,32 @@
         <entry key="..\:/TeamProject/Test/app/src/main/res/layout/activity_test.xml" value="0.36614583333333334" />
         <entry key="..\:/TeamProject/Test/app/src/main/res/layout/recycler_item.xml" value="0.36614583333333334" />
         <entry key="..\:/TeamProject/Test/app/src/main/res/layout/test.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_ages_info.xml" value="0.2651975683890577" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_doctor_only_signing.xml" value="0.3283514492753623" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_doctor_only_signing_complete.xml" value="0.33605072463768115" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_doctor_reservation_check.xml" value="0.33605072463768115" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_firstaid.xml" value="0.33605072463768115" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_gpsactivity.xml" value="0.3283514492753623" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_mainpage.xml" value="0.3283514492753623" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_my_info.xml" value="0.33605072463768115" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_parsing.xml" value="0.33605072463768115" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_reservation_complete.xml" value="0.33605072463768115" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_reservation_complete_infomation.xml" value="0.33605072463768115" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_reservation_main.xml" value="0.33605072463768115" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/team/app/src/main/res/layout/activity_detailpage.xml" value="0.33" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/team/app/src/main/res/layout/activity_gpsactivity.xml" value="0.2651975683890577" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/team/app/src/main/res/layout/activity_mainpage.xml" value="0.2651975683890577" />
+        <entry key="..\:/Users/cbj/AndroidStudioProjects/team/app/src/main/res/layout/activity_parsing.xml" value="0.45742753623188404" />
         <entry key="..\:/Users/opiru/AndroidStudioProjects/TeamProject3/app/src/main/res/layout/activity_ages_info.xml" value="0.1" />
         <entry key="..\:/Users/opiru/AndroidStudioProjects/TeamProject3/app/src/main/res/layout/activity_detailpage.xml" value="0.1" />
         <entry key="..\:/Users/opiru/AndroidStudioProjects/TeamProject3/app/src/main/res/layout/activity_doctor_only_reservation_check.xml" value="0.1" />
         <entry key="..\:/Users/opiru/AndroidStudioProjects/TeamProject3/app/src/main/res/layout/activity_firstaid.xml" value="0.1" />
         <entry key="..\:/Users/opiru/AndroidStudioProjects/TeamProject3/app/src/main/res/layout/activity_mainpage.xml" value="0.1" />
         <entry key="..\:/Users/opiru/AndroidStudioProjects/TeamProject3/app/src/main/res/layout/activity_my_info.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_detailpage.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_gpsactivity.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_mainpage.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TeamProject/app/src/main/res/layout/activity_parsing.xml" value="0.10925925925925926" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TeamProject1/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.124" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TeamProject1/app/src/main/res/layout/activity_ages_info.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TeamProject1/app/src/main/res/layout/activity_detailpage.xml" value="0.14722222222222223" />

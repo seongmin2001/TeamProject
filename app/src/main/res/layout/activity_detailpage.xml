@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,14 +12,78 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/arrow_back_black" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back_black"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="375dp"
-        android:layout_height="526dp"
-        android:layout_marginLeft="45px"
-        android:layout_marginTop="120px"
-        app:srcCompat="@drawable/detailpage_face" />
+    <ImageButton
+        android:id="@+id/btDetail_Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/detailpage_face_01"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-</LinearLayout>
+    <ImageButton
+        android:id="@+id/btDetail_LeftEar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/btDetail_Head"
+        app:layout_constraintTop_toBottomOf="@+id/btDetail_Head"
+        app:srcCompat="@drawable/detailpage_face_02" />
+
+    <ImageButton
+        android:id="@+id/btDetail_Nose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/btDetail_LeftEar"
+        app:layout_constraintTop_toBottomOf="@+id/btDetail_Eyes"
+        app:srcCompat="@drawable/detailpage_face_05" />
+
+    <ImageButton
+        android:id="@+id/btDetail_RightEar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/btDetail_Eyes"
+        app:layout_constraintTop_toBottomOf="@+id/btDetail_Head"
+        app:srcCompat="@drawable/detailpage_face_04" />
+
+    <ImageButton
+        android:id="@+id/btDetail_Mouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/btDetail_LeftEar"
+        app:layout_constraintStart_toEndOf="@+id/btDetail_LeftEar"
+        app:layout_constraintTop_toBottomOf="@+id/btDetail_Nose"
+        app:srcCompat="@drawable/detailpage_face_06" />
+
+    <ImageButton
+        android:id="@+id/btDetail_Eyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/btDetail_LeftEar"
+        app:layout_constraintTop_toBottomOf="@+id/btDetail_Head"
+        app:srcCompat="@drawable/detailpage_face_03" />
+
+    <TextView
+        android:id="@+id/Detail_Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="선택부위"
+        app:layout_constraintStart_toStartOf="@+id/btDetail_Mouth"
+        app:layout_constraintTop_toBottomOf="@+id/btDetail_Mouth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
