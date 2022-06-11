@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 public class agesInfoActivity extends AppCompatActivity {
 
     ImageButton imgbtnDown;
+
     Button btnTen, btnTwenty, btnThirty, btnForty;
     boolean i = true;
 
