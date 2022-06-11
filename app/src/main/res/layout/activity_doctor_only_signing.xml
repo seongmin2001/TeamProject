@@ -45,13 +45,13 @@
             android:layout_marginBottom="20dp">
 
             <EditText
-                android:id="@+id/editTextTextPersonName1"
+                android:id="@+id/et_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="병원명"
                 android:inputType="textPersonName"
                 android:textColorHint="#5A6368"
-                android:hint="성명"
                 tools:layout_editor_absoluteX="45dp"
                 tools:layout_editor_absoluteY="122dp" />
 
@@ -63,32 +63,32 @@
             android:layout_marginBottom="20dp">
 
             <EditText
-                android:id="@+id/editCompanyName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColorHint="#5A6368"
-                android:hint="병원(회사)명"
-                tools:layout_editor_absoluteX="45dp"
-                tools:layout_editor_absoluteY="122dp" />
-
-
-        </TableRow>
-
-        <TableRow
-            android:layout_height="100dp"
-            android:layout_marginBottom="20dp">
-
-            <EditText
-                android:id="@+id/editTextPhone"
+                android:id="@+id/et_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="11"
-                android:inputType="phone"
-                android:textColorHint="#5A6368"
                 android:hint="전화번호를 입력(숫자만)"
+                android:inputType="phone"
                 android:maxLength="11"
+                android:textColorHint="#5A6368"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="122dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/et_aname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="사업자명"
+                android:inputType="textPersonName"
+                android:textColorHint="#5A6368"
                 tools:layout_editor_absoluteX="103dp"
                 tools:layout_editor_absoluteY="148dp" />
         </TableRow>
@@ -98,14 +98,15 @@
             android:layout_marginBottom="20dp">
 
             <EditText
-                android:id="@+id/editExtraTalking"
+                android:id="@+id/et_anum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textMultiLine"
+                android:ems="11"
+                android:hint="사업자번호"
+                android:inputType="phone"
+                android:maxLength="11"
                 android:scrollHorizontally="false"
                 android:textColorHint="#5A6368"
-                android:hint="하고싶은 말을 적어주세요"
 
                 tools:layout_editor_absoluteX="45dp"
                 tools:layout_editor_absoluteY="122dp" />
@@ -115,7 +116,7 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
