@@ -18,7 +18,7 @@ import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText et_id, et_pass;
-    private Button btn_login, btn_register;
+    private Button btn_login, btn_exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +28,13 @@ public class LoginActivity extends AppCompatActivity {
         et_id = findViewById(R.id.et_name);
         et_pass = findViewById(R.id.et_num);
         btn_login = findViewById(R.id.btn_login);
-        btn_register = findViewById(R.id.btn_register);
+        btn_exit = findViewById(R.id.btn_exit);
 
-        //회원가입 버튼을 클릭 시 수행
-        btn_register.setOnClickListener(new View.OnClickListener() {
+        //나가기 버튼을 클릭 시 수행
+        btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, doctor_reservation_check.class);
+                Intent intent = new Intent(LoginActivity.this, MainPageActivity.class);
                 startActivity(intent);
             }
         });

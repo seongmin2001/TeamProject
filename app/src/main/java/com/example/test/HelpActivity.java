@@ -7,21 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class myInfoActivity extends AppCompatActivity {
+public class HelpActivity extends AppCompatActivity {
 
     ImageButton imgbtnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_info);
+        setContentView(R.layout.activity_help);
 
         imgbtnBack = findViewById(R.id.imgbtn_Back);
 
         imgbtnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(myInfoActivity.this, MainPageActivity.class);
+                Intent intent = new Intent(HelpActivity.this, MainPageActivity.class);
                 startActivity(intent);
             }
         });

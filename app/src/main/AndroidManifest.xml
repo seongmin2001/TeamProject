@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -17,22 +17,23 @@
         android:theme="@style/Theme.Test"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.example.test.reservation_complete_infomation"
+            android:name=".HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservation_complete_infomation"
             android:exported="true" />
         <activity
-            android:name="com.example.test.reservation_main"
+            android:name=".reservation_main"
             android:exported="true" />
         <activity
-            android:name="com.example.test.doctor_only_signing_complete"
+            android:name=".doctor_only_signing_complete"
             android:exported="true" />
         <activity
-            android:name="com.example.test.doctor_only_signing"
+            android:name=".doctor_only_signing"
             android:exported="true" />
         <activity
-            android:name="com.example.test.doctor_reservation_check"
-            android:exported="true" />
-
-        <!-- ui 앞 부분 -->
+            android:name=".doctor_reservation_check"
+            android:exported="true" /> <!-- ui 앞 부분 -->
         <activity
             android:name=".myInfoActivity"
             android:exported="true" />
@@ -47,21 +48,22 @@
             android:exported="true" />
         <activity
             android:name=".MainPageActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".GPSActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
-            <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".ParsingActivity"
-            android:exported="true"/>
-        <!--<meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD0OHRW-muWUdrE9LogrHAk_cZTJ4zL40w" />-->
+            android:exported="true" />
     </application>
+
 </manifest>

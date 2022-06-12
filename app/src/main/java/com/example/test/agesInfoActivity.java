@@ -2,6 +2,7 @@ package com.example.test;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +10,7 @@ import android.widget.ImageButton;
 
 public class agesInfoActivity extends AppCompatActivity {
 
-    ImageButton imgbtnDown;
+    ImageButton imgbtnDown, imgbtnBack;
 
     Button btnTen, btnTwenty, btnThirty, btnForty;
     boolean i = true;
@@ -19,6 +20,7 @@ public class agesInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ages_info);
 
+        imgbtnBack = findViewById(R.id.imgbtn_Back);
         imgbtnDown = findViewById(R.id.imgbtn_down);
         btnTen = findViewById(R.id.btn_ten);
         btnTwenty = findViewById(R.id.btn_twenty);
@@ -44,6 +46,14 @@ public class agesInfoActivity extends AppCompatActivity {
                     btnForty.setVisibility(View.INVISIBLE);
                     i = true;
                 }
+            }
+        });
+
+        imgbtnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(agesInfoActivity.this, MainPageActivity.class);
+                startActivity(intent);
             }
         });
 

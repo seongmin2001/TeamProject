@@ -29,6 +29,7 @@ public class reservation_main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_reservation_main);
 
         name=(EditText)findViewById(R.id.editText);
         phonecall=(EditText)findViewById(R.id.editText2);

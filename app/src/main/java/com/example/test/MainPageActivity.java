@@ -16,7 +16,7 @@ public class MainPageActivity extends AppCompatActivity {
     FrameLayout flMenu, flPicture, flText;
 
     ImageButton imgbtnHead, imgbtnOther, imgbtnBok, imgbtnGol, imgbtnBody, imgbtnMok, imgbtnArm;
-    ImageButton imgbtnMenu, imgbtnAid;
+    ImageButton imgbtnMenu, imgbtnHelp, imgbtnAid, imgbtnReserv, imgbtnLogin, imgbtnAgeInfo, imgbtnInfoAgree, imgbtnResearch, imgbtnDocsign;
     Integer count = 0;
 
     public static Context context; //다른 액티비티에 변수 전달
@@ -38,19 +38,77 @@ public class MainPageActivity extends AppCompatActivity {
         imgbtnBody = findViewById(R.id.btBody);
         imgbtnMok = findViewById(R.id.btMok);
 
-
+        //메뉴목록
         imgbtnMenu = findViewById(R.id.imgbtn_menu);
+        imgbtnHelp = findViewById(R.id.imgbtn_Help);
         imgbtnAid = findViewById(R.id.imgBtn_aid);
+        imgbtnReserv = findViewById(R.id.imgBtn_reservation);
+        imgbtnLogin = findViewById(R.id.imgBtn_login);
+        imgbtnAgeInfo = findViewById(R.id.imgBtn_ageInfo);
+        imgbtnInfoAgree = findViewById(R.id.imgBtn_infoAgree);
+        imgbtnResearch = findViewById(R.id.imgBtn_reSearch);
+        imgbtnDocsign = findViewById(R.id.imgBtn_docSign);
         flMenu = (FrameLayout) findViewById(R.id.FL_Menu) ;
         flPicture = (FrameLayout) findViewById(R.id.FL_Picture);
         flText = (FrameLayout) findViewById(R.id.FL_Text);
 
         body_tv = (TextView) findViewById(R.id.bodyTv);
 
+        imgbtnHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainPageActivity.this,HelpActivity.class);
+                startActivity(intent);
+            }
+        });
+
         imgbtnAid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainPageActivity.this,firstaidActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        imgbtnReserv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainPageActivity.this,reservation_main.class);
+                startActivity(intent);
+            }
+        });
+        imgbtnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainPageActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        imgbtnAgeInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainPageActivity.this,agesInfoActivity.class);
+                startActivity(intent);
+            }
+        });
+        imgbtnInfoAgree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainPageActivity.this,myInfoActivity.class);
+                startActivity(intent);
+            }
+        });
+        imgbtnResearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainPageActivity.this,reservation_complete_infomation.class);
+                startActivity(intent);
+            }
+        });
+        imgbtnDocsign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainPageActivity.this,doctor_only_signing.class);
                 startActivity(intent);
             }
         });
