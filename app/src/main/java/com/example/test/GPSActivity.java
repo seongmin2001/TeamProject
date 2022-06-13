@@ -44,7 +44,7 @@ public class GPSActivity extends AppCompatActivity {
             showDialogForLocationServiceSetting();
         }
 
-        Button ShowLocationButton = (Button) findViewById(R.id.button);
+        Button ShowLocationButton = (Button) findViewById(R.id.btn_Home);
         ShowLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -59,7 +59,7 @@ public class GPSActivity extends AppCompatActivity {
                 Toast.makeText(GPSActivity.this, "현재위치 \n위도 " + latitude + "\n경도 " + longitude, Toast.LENGTH_LONG).show();
             }
         });
-        Button bt_search = (Button) findViewById(R.id.button2);
+        Button bt_search = (Button) findViewById(R.id.btn_Parching);
         bt_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

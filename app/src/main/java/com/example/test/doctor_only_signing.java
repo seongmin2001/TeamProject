@@ -19,7 +19,7 @@ import org.json.JSONObject;
 public class doctor_only_signing extends AppCompatActivity {
 
     private EditText et_name, et_num, et_aname, et_anum;
-    private Button btn_register;
+    private Button btn_register, btnMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,15 @@ public class doctor_only_signing extends AppCompatActivity {
         et_aname = findViewById(R.id.et_aname);
         et_anum = findViewById(R.id.et_anum);
         btn_register = findViewById(R.id.btn_Register);
+        btnMain = findViewById(R.id.btn_Main);
+
+        btnMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(doctor_only_signing.this, MainPageActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //회원가입 버튼 클릭시 수행
         btn_register.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +51,8 @@ public class doctor_only_signing extends AppCompatActivity {
                 String HosaName = et_aname.getText().toString();
                 String HosaNum = et_anum.getText().toString();
                 int HosNum = Integer.parseInt(et_num.getText().toString());
+
+
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override

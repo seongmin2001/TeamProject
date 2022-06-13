@@ -126,12 +126,11 @@
     </TableLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/btn_Main"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/custom_button_ripple"
-        android:enabled="false"
         android:text="메인화면"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

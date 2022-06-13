@@ -52,7 +52,7 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button2"
+                android:id="@+id/btn_Parching"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="25dp"
@@ -61,7 +61,7 @@
                 android:enabled="false"
                 android:text="상세 정보"
                 app:layout_constraintEnd_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="@+id/button2" />
+                app:layout_constraintTop_toTopOf="@+id/btn_Parching" />
         </TableRow>
 
         <TableRow
@@ -85,7 +85,7 @@
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button3"
+                android:id="@+id/btn_Main"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="25dp"
@@ -94,7 +94,7 @@
                 android:enabled="false"
                 android:text="상세 정보"
                 app:layout_constraintEnd_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="@+id/button3" />
+                app:layout_constraintTop_toTopOf="@+id/btn_Main" />
         </TableRow>
 
         <TableRow
@@ -127,7 +127,7 @@
                 android:enabled="false"
                 android:text="상세 정보"
                 app:layout_constraintEnd_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="@+id/button3" />
+                app:layout_constraintTop_toTopOf="@+id/btn_Main" />
         </TableRow>
 
         <TableRow
@@ -160,7 +160,7 @@
                 android:enabled="false"
                 android:text="상세 정보"
                 app:layout_constraintEnd_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="@+id/button3" />
+                app:layout_constraintTop_toTopOf="@+id/btn_Main" />
         </TableRow>
 
 

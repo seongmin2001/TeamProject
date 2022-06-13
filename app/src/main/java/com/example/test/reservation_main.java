@@ -21,7 +21,7 @@ public class reservation_main extends AppCompatActivity {
     private TextView autoCompleteTextView;
     private DatePickerDialog.OnDateSetListener callbackMethod;
     private Context mContext;
-    private Button parcingBtn;
+    private Button parcingBtn, btnMain;
     private EditText name;
     private EditText phonecall;
 
@@ -31,20 +31,32 @@ public class reservation_main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservation_main);
 
-        name=(EditText)findViewById(R.id.editText);
+        btnMain = findViewById(R.id.btn_Main);
+        name =(EditText)findViewById(R.id.editText);
         phonecall=(EditText)findViewById(R.id.editText2);
         mContext = this;
-        parcingBtn = (Button) findViewById(R.id.button2);
+        parcingBtn = (Button) findViewById(R.id.btn_Parching);
         boolean boo = com.example.test.PreferenceManager.getBoolean(mContext,"check");
         if (boo){
             name.setText(PreferenceManager.getString(mContext,"nm"));
             phonecall.setText(PreferenceManager.getString(mContext,"pc"));
 
         }
-        parcingBtn.setOnClickListener(new View.OnClickListener() {
-            Intent intent = new Intent(reservation_main.this , reservation_main.class);
+
+        btnMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(reservation_main.this, MainPageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        parcingBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(reservation_main.this , reservation_complete_infomation.class);
                 PreferenceManager.setString(mContext,"nm",name.getText().toString().trim());  //nm=name으로 저장
                 PreferenceManager.setString(mContext,"pc",phonecall.getText().toString().trim()); // pc = phonecall로 저장
 
@@ -57,6 +69,7 @@ public class reservation_main extends AppCompatActivity {
                     intent.putExtra("ph",checkPC);
                     Toast.makeText(reservation_main.this , "저장완료",Toast.LENGTH_SHORT);
                 }
+                startActivity(intent);
             }
         });
 
