@@ -8,38 +8,84 @@
     android:padding="10dp">
 
 
-    <TextView
-        android:id="@+id/tv_list_Hname"
-        android:layout_width="157dp"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_weight="1"
-        android:padding="5dp" />
+        android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/tv_list_Hnum"
-        android:layout_width="157dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="00dp"
+        <TextView
+            android:id="@+id/tv_list_Hnum"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
 
-        android:layout_weight="5"
-        android:padding="5dp" />
+            android:layout_marginTop="5dp"
+            android:layout_weight="5"
+            android:padding="5dp" />
 
+        <TextView
+            android:id="@+id/tv_list_Haname"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="5"
+            android:padding="5dp" />
 
-    <TextView
-        android:id="@+id/tv_list_Haname"
-        android:layout_width="157dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_weight="5"
-        android:padding="5dp" />
+        <TextView
+            android:id="@+id/tv_list_Hanum"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="5"
+            android:padding="5dp" />
 
-    <TextView
-        android:id="@+id/tv_list_Hanum"
-        android:layout_width="157dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_weight="5"
-        android:padding="5dp" />
+        <TextView
+            android:id="@+id/tv_list_Hname"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            android:layout_weight="1"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:text="환자이름 :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:text="환자이름 :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:text="환자이름 :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="83dp"
+            android:text="환자이름 :"
+            android:textSize="16sp" />
+    </FrameLayout>
+
 
 </LinearLayout>
