@@ -127,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="450dp"
                 android:background="@android:color/transparent"
-                android:visibility="invisible">
+                android:visibility="visible">
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -146,13 +146,14 @@
                     android:layout_marginTop="920px"
                     android:text="예약정보조회"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="780px"
+                    android:layout_marginLeft="520px"
                     android:layout_marginTop="920px"
                     android:text="병원등록문의"
                     android:textSize="16sp"
@@ -170,7 +171,7 @@
                     android:id="@+id/imgBtn_docSign"
                     android:layout_width="60dp"
                     android:layout_height="54dp"
-                    android:layout_marginLeft="800px"
+                    android:layout_marginLeft="550px"
                     android:layout_marginTop="780px"
                     app:srcCompat="@drawable/menu_hsjoin" />
 
@@ -280,6 +281,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="550px"
                     android:layout_marginTop="780px"
+                    android:visibility="gone"
                     app:srcCompat="@drawable/menu_reserve" />
 
             </FrameLayout>
