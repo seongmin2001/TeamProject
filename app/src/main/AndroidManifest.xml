@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Test"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".doctor_reservation"
+            android:exported="false" />
+        <activity
             android:name=".HelpActivity"
             android:exported="false" />
         <activity
@@ -48,7 +51,7 @@
             android:exported="true" />
         <activity
             android:name=".MainPageActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".GPSActivity"
             android:exported="true">

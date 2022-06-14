@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                                 String userPass = jsonObject.getString("userPassword");
 
                                 Toast.makeText(getApplicationContext(), "로그인 성공", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(LoginActivity.this, doctor_reservation_check.class);
+                                Intent intent = new Intent(LoginActivity.this, doctor_reservation.class);
                                 intent.putExtra("userID", userID);
                                 intent.putExtra("userID", userPass);
                                 startActivity(intent);

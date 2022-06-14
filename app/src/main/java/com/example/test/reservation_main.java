@@ -15,6 +15,13 @@ import android.widget.TextView;
 import android.content.Intent;
 import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 public class reservation_main extends AppCompatActivity {
 
@@ -24,6 +31,8 @@ public class reservation_main extends AppCompatActivity {
     private Button parcingBtn, btnMain;
     private EditText name;
     private EditText phonecall;
+    RadioButton id;
+    String t2, pp;
 
 
     @Override
@@ -36,12 +45,12 @@ public class reservation_main extends AppCompatActivity {
         phonecall=(EditText)findViewById(R.id.editText2);
         mContext = this;
         parcingBtn = (Button) findViewById(R.id.btn_Parching);
-        boolean boo = com.example.test.PreferenceManager.getBoolean(mContext,"check");
-        if (boo){
-            name.setText(PreferenceManager.getString(mContext,"nm"));
-            phonecall.setText(PreferenceManager.getString(mContext,"pc"));
-
-        }
+//        boolean boo = com.example.test.PreferenceManager.getBoolean(mContext,"check");
+//        if (boo){
+//            name.setText(PreferenceManager.getString(mContext,"nm"));
+//            phonecall.setText(PreferenceManager.getString(mContext,"pc"));
+//
+//        }
 
         btnMain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,22 +65,37 @@ public class reservation_main extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(reservation_main.this , reservation_complete_infomation.class);
-                PreferenceManager.setString(mContext,"nm",name.getText().toString().trim());  //nm=name으로 저장
-                PreferenceManager.setString(mContext,"pc",phonecall.getText().toString().trim()); // pc = phonecall로 저장
 
-                String checkNM = PreferenceManager.getString(mContext,"id");
-                String checkPC = PreferenceManager.getString(mContext,"pc");
-                if (TextUtils.isEmpty(checkNM) ||  TextUtils.isEmpty(checkPC)){
-                    Toast.makeText(reservation_main.this,"성함/전화번호를 확인해주세요",Toast.LENGTH_SHORT);
-                } else {
-                    intent.putExtra("nm",checkNM);
-                    intent.putExtra("ph",checkPC);
-                    Toast.makeText(reservation_main.this , "저장완료",Toast.LENGTH_SHORT);
-                }
-                startActivity(intent);
+                String CusName = name.getText().toString();
+                String CusNum = phonecall.getText().toString();
+                String CusGen = pp;
+                String CusBirth = autoCompleteTextView.getText().toString();
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonObject = new JSONObject(response);
+                            boolean success = jsonObject.getBoolean("success");
+                            if (success) { // 회원등록에 성공한 경우
+                                Toast.makeText(getApplicationContext(), "회원등록 성공", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(reservation_main.this, reservation_complete_infomation.class);
+                                startActivity(intent);
+                            } else { // 회원등록에 실패한 경우
+                                Toast.makeText(getApplicationContext(), "회원등록 실패", Toast.LENGTH_SHORT).show();
+                                return;
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                // 서버로 Volley를 이용해 요청
+                CustomerRequest customerRequest = new CustomerRequest(CusName, CusNum, CusGen, CusBirth, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(reservation_main.this);
+                queue.add(customerRequest);
             }
         });
+
 
         this.IntializeView();
         this.IntializeListener();
@@ -84,11 +108,13 @@ public class reservation_main extends AppCompatActivity {
                 if(checkid == R.id.radioButton)
                 {
                     Toast.makeText(reservation_main.this, "남성입니다",Toast.LENGTH_SHORT).show();
+                    pp = id.getText().toString();
                 }
 
                 if(checkid == R.id.radioButton2)
                 {
                     Toast.makeText(reservation_main.this, "여성입니다",Toast.LENGTH_SHORT).show();
+                    pp = id.getText().toString();
                 }
                 else
                 {
@@ -109,6 +135,8 @@ public class reservation_main extends AppCompatActivity {
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
 
                 autoCompleteTextView.setText(year+"년"+month+"월"+day+"일");
+                t2 = autoCompleteTextView.getText().toString();
+                Toast.makeText(reservation_main.this, t2,Toast.LENGTH_SHORT).show();
 
             }
         };
