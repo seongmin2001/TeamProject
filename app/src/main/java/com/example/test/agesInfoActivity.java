@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class agesInfoActivity extends AppCompatActivity {
 
     ImageButton imgbtnDown, imgbtnBack;
 
     Button btnTen, btnTwenty, btnThirty, btnForty;
+    TextView tvTop, tvTop2, tvSub1, tvSub2, tvSub3, tvSub4;
     boolean i = true;
 
     @Override
@@ -26,6 +28,10 @@ public class agesInfoActivity extends AppCompatActivity {
         btnTwenty = findViewById(R.id.btn_twenty);
         btnThirty = findViewById(R.id.btn_thirty);
         btnForty = findViewById(R.id.btn_forty);
+        tvSub1 = findViewById(R.id.tv_sub1);
+        tvSub2 = findViewById(R.id.tv_sub2);
+        tvSub3 = findViewById(R.id.tv_sub3);
+        tvSub4 = findViewById(R.id.tv_sub4);
 
         imgbtnDown.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,5 +63,23 @@ public class agesInfoActivity extends AppCompatActivity {
             }
         });
 
+        btnTwenty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvSub1.setText("위장염");
+                tvSub2.setText("www.daum.net");
+                tvSub3.setText("비타민B");
+                tvSub4.setText("www.daum.net");
+            }
+        });
+        btnTen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvSub1.setText("감기");
+                tvSub2.setText("www.naver.com");
+                tvSub3.setText("프로바이오틱스");
+                tvSub4.setText("www.naver.com");
+            }
+        });
     }
 }
