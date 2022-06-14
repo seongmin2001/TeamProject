@@ -69,7 +69,7 @@ public class reservation_main extends AppCompatActivity {
                 String CusName = name.getText().toString();
                 String CusNum = phonecall.getText().toString();
                 String CusGen = pp;
-                String CusBirth = autoCompleteTextView.getText().toString();
+                String CusBirth = t2;
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -134,7 +134,24 @@ public class reservation_main extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
 
-                autoCompleteTextView.setText(year+"년"+month+"월"+day+"일");
+                if(month < 9 && day < 10){
+                    autoCompleteTextView.setText(year+""+0+(month+1)+""+0+day+"");
+                }
+                else if(month < 9 && day > 9){
+                    autoCompleteTextView.setText(year+""+0+(month+1)+""+day+"");
+                }
+                else if(month > 9 && day < 10){
+                    autoCompleteTextView.setText(year+""+(month+1)+""+0+day+"");
+                }
+                else if(month > 9 && day > 9){
+                    autoCompleteTextView.setText(year+""+(month+1)+""+day+"");
+                }
+                else if(month == 9 && day > 9){
+                    autoCompleteTextView.setText(year+""+(month+1)+""+day+"");
+                }
+                else if(month == 9 && day < 10){
+                    autoCompleteTextView.setText(year+""+(month+1)+""+0+day+"");
+                }
                 t2 = autoCompleteTextView.getText().toString();
                 Toast.makeText(reservation_main.this, t2,Toast.LENGTH_SHORT).show();
 
